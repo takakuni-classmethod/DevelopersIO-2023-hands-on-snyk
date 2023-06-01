@@ -28,3 +28,5 @@
 7\. 数分後、Cloud9 にログインができ、ワークショップの準備が整うはずです。
 
 <img src="./../../static/images/module1/06_create_environment.png" width="100%">
+
+[Next](../module2/README.md)
