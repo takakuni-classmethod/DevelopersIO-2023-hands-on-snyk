@@ -15,3 +15,4 @@ unzip pipeline.zip -d pipeline && rm pipeline.zip
 
 <img src="/static/images/module2/01_download-project-files.png" width="100%">
 
+[Next](./deploy-pipeline.md)
