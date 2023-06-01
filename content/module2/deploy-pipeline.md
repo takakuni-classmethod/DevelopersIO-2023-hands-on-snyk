@@ -46,7 +46,7 @@ dast:
 cdk bootstrap
 ```
 
-4\. 次に、CDK が正しくインストールされ、構成されているかどうかをテストしましょう。 Cloud9 のターミナルで以下のコマンドを入力します。リリースパイプライン構築のための結合された CloudFormation テンプレートが表示されるはずです。
+5\. 次に、CDK が正しくインストールされ、構成されているかどうかをテストしましょう。 Cloud9 のターミナルで以下のコマンドを入力します。リリースパイプライン構築のための結合された CloudFormation テンプレートが表示されるはずです。
 
 ```bash
 cdk synth
@@ -62,4 +62,4 @@ cdk deploy --require-approval never
 
 次のセクションに進み、展開した内容を調べてください。
 
-[Next](../module2/configure-cdk.md.md)
+[Next](../module2/configure-cdk.md)
