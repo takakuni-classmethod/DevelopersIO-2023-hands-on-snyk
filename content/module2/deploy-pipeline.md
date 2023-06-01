@@ -4,7 +4,7 @@ CDK 環境ができたので、リリースパイプラインをデプロイし�
 
 1\. AWS Cloud9 のターミナルウィンドウに戻り、**pipeline** フォルダの下の **config.yaml.sample** から **config.yaml** という名前の新しいファイルを作成しましょう。
 
-```
+```bash
 cd ~/environment/pipeline
 cp config.yaml.sample config.yaml
 ```
@@ -42,19 +42,19 @@ dast:
 
 4\. CDK コマンドを実行する前に、CDK がデプロイするために必要なリソース をプロビジョニングしましょう。Cloud9 ターミナルに以下を入力するだけで、プロビジョニング出来ます
 
-```
+```bash
 cdk bootstrap
 ```
 
 4\. 次に、CDK が正しくインストールされ、構成されているかどうかをテストしましょう。 Cloud9 のターミナルで以下のコマンドを入力します。リリースパイプライン構築のための結合された CloudFormation テンプレートが表示されるはずです。
 
-```
+```bash
 cdk synth
 ```
 
 6\. Cloud9 のターミナルウィンドウで、以下のコマンドでリリースパイプラインをデプロイしてみましょう。
 
-```
+```bash
 cdk deploy --require-approval never
 ```
 
