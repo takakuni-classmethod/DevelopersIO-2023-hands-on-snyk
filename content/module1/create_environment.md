@@ -29,4 +29,4 @@
 
 <img src="./../../static/images/module1/06_create_environment.png" width="100%">
 
-[Next](../module2/README.md)
+[Next](../module2/index.md)
