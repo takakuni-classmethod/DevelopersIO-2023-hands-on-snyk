@@ -62,4 +62,4 @@ cdk deploy --require-approval never
 
 次のセクションに進み、展開した内容を調べてください。
 
-[Next](../module2/configure-cdk.md)
+[Next](../module2/explore-the-environment.md)
