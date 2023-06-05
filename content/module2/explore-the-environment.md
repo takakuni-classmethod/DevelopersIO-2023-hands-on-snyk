@@ -16,3 +16,12 @@
 
 AWS CodePipelineでは、パイプライン構造で [runOrder](https://docs.aws.amazon.com/ja_jp/codepipeline/latest/userguide/reference-pipeline-structure.html) を指定することで、並行してアクションを実行できます。 セキュリティチェックがすべて合格したら、 **BuildImage** ステージを実行し、Webアプリケーションのコンテナイメージを作成します。
 
+
+
+**BuildImage** ステージを定義する CodeBuild プロジェクトを確認してみましょう。
+
+マネジメントコンソールの 検索バーに **CodeBuild** と入力し、CodeBuild を選択すると AWS CodeBuild のダッシュボードが表示されます。 **codebuild-docker-project** という名前の CodeBuild プロジェクトが表示されているはずです。
+
+<img src="./../../static/images/module2/03_explore-the-environment.png" width="100%">
+
+CodeBuildプロジェクトが実際に行っていることを詳しく知るには、Buildプロジェクト一覧からcodebuild-docker-projectをクリックし、Build Detailsタブをクリックします。
