@@ -34,4 +34,4 @@ Snyk Code は SAST 製品の 1 つで、オープンソースコミットを学�
 
 <img src="./static/images/diagram.png" width="100%">
 
-[Next：Snyk へのサインアップ](/content/module1/snyk_sign_up.md)
+[Next：開発環境のセットアップ](./content/module1/create_environment.md)
