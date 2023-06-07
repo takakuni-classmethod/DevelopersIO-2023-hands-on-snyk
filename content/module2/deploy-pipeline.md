@@ -4,7 +4,7 @@ AWS CDK のセットアップが完了したため、リリースパイプライ
 
 今回の AWS CDK で以下のリソースをデプロイします。 Snyk アクションは、手動でデプロイするため、このセクションで作成されなくても問題ないです。
 
-<img src="./../../static/images/module2/01-deploy-pipeline.png" width=100%>
+<img src="./../../static/images/module2/01-01-deploy-pipeline.png" width=100%>
 
 1\. AWS Cloud9 のターミナルウィンドウに戻り、 **pipeline** フォルダの下の **config.yaml.sample** から **config.yaml** という名前の新しいファイルを作成しましょう。
 
@@ -15,7 +15,7 @@ cp config.yaml.sample config.yaml
 
 2\. 左側にある Cloud9 のエクスプローラーをクリックして、新しく作成したファイル (**config.yaml**) を開きます。
 
-<img src="./../../static/images/module2/02-deploy-pipeline.png" width=100%>
+<img src="./../../static/images/module2/01-02-deploy-pipeline.png" width=100%>
 
 3\. このワークショップでは **config.yaml** を利用してパイプラインの特定のビルドステージを有効/無効にする仕組みになっています。
 
@@ -122,7 +122,7 @@ cdk deploy --require-approval never
 
 8\. CDK のデプロイを数分待ってみましょう。 AWS リソースのプロビジョニング中に、(**pipeline/appsec_workshop** フォルダーの下) CDK コンストラクトのいくつかを調べてみましょう。CDK が完了すると、次のような出力が得られるはずです。
 
-<img src="./../../static/images/module2/03-deploy-pipeline.png" width="100%">
+<img src="./../../static/images/module2/01-03-deploy-pipeline.png" width="100%">
 
 次のセクションに進み、展開した内容を調べてください。
 
