@@ -1,18 +1,7 @@
-# Project File のダウンロード
+以下の URL に従って、 Project File をダウンロードします。
 
-このワークショップのリリースパイプラインの必要なリソースはすべてAWS CDK で定義されています。
+[Project File のダウンロード](https://catalog.workshops.aws/sec4devs/ja-JP/module2/download-project-files)
 
-このタスクでは、ソースコードの一式を Cloud9 環境にダウンロードします。
+終わり次第、 AWS CDK の設定を行います。
 
-1\. AWS Cloud9 に進み、ターミナルウィンドウに入り、次のコマンドを貼り付けて、コードをダウンロードします。
-
-```
-curl 'https://static.us-east-1.prod.workshops.aws/public/34501f9e-b048-471f-a9e7-343b5cf15426/assets/pipeline.zip' --output pipeline.zip
-unzip pipeline.zip -d pipeline && rm pipeline.zip
-```
-
-2. リリース自動化用の CDK コンストラクトを含む **pipeline** という名前の新しいフォルダが表示されます。次のセクションに進み、環境にデプロイしましょう。
-
-<img src="/static/images/module2/01_download-project-files.png" width="100%">
-
-[Next](./deploy-pipeline.md)
+[AWS CDK の設定](./configure-cdk.md)

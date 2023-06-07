@@ -6,4 +6,4 @@
 
 終わり次第、 Snyk のサインアップに進みます。
 
-[Next: Snyk へのサインアップ](./snyk_sign_up.md)
+[Next: Snyk へのサインアップ](./sign-up-snyk.md)

@@ -32,6 +32,6 @@ Snyk Code は SAST 製品の 1 つで、オープンソースコミットを学�
 今回は以下の構成になります。
 このワークショップでは、 Snyk Open Source を利用します。
 
-<img src="./static/images/diagram.png" width="100%">
+<img src="./static/images/diagrams.png" width="100%">
 
-[Next：開発環境のセットアップ](./content/module1/create_environment.md)
+[Next：開発環境のセットアップ](./content/module1/aws-cloud9.md)
