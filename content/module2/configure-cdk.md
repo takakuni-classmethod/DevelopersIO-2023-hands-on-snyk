@@ -32,6 +32,12 @@ source .venv/bin/activate
 
 <img src="./../../static/images/module2/02-01-configure-cdk.png" width=100%>
 
+5\. 次のコマンドで必要なライブラリをインストールしましょう。
+
+```bash
+pip install -r requirements.txt
+```
+
 パイプラインとツールのデプロイに進みます。
 
 [Next: パイプラインとツールのデプロイ](./deploy-pipeline.md)
