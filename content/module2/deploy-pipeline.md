@@ -62,7 +62,7 @@ cdk synth
 cdk deploy --require-approval never
 ```
 
-7\. CDK のデプロイを数分待ってみましょう。 AWS リソースのプロビジョニング中に、(**DevelopersIO-2023-hands-on-snyk-cdk/pipeline/appsec_workshop** フォルダーの下) CDK コンストラクトのいくつかを調べてみましょう。CDK が完了すると、次のような出力が得られるはずです。
+7\. CDK のデプロイを数分待ってみましょう。 AWS リソースのプロビジョニング中に、（**DevelopersIO-2023-hands-on-snyk-cdk/pipeline/appsec_workshop** フォルダーの下）CDK コンストラクトのいくつかを調べてみましょう。CDK が完了すると、次のような出力が得られるはずです。
 
 <img src="./../../static/images/module2/02-03-deploy-pipeline.png" width=100%>
 
