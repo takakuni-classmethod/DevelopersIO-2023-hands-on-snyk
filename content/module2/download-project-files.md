@@ -1,7 +1,13 @@
-以下の URL に従って、 Project File をダウンロードします。
+このワークショップは、 AWS CDK を利用して、リソースパイプラインをデプロイます。
 
-[Project File のダウンロード](https://catalog.workshops.aws/sec4devs/ja-JP/module2/download-project-files)
+このタスクでは、ソースコードの一式を Cloud9 環境にダウンロードします。
 
-終わり次第、 AWS CDK の設定を行います。
+1\. AWS Cloud9 に進み、ターミナルウィンドウに入り、次のコマンドを貼り付けて、コードをダウンロードします。
+
+```bash
+git clone https://github.com/takakuni-classmethod/DevelopersIO-2023-hands-on-snyk-cdk.git
+```
+
+2\. リリース自動化用の CDK コンストラクトを含む **DevelopersIO-2023-hands-on-snyk-cdk** という名前の新しいフォルダが表示されます。次のセクションに進み、環境にデプロイしましょう。
 
 [AWS CDK の設定](./configure-cdk.md)

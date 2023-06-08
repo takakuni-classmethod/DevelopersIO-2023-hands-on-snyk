@@ -30,7 +30,9 @@ Snyk Code は SAST 製品の 1 つで、オープンソースコミットを学�
 ## 構成
 
 今回は以下の構成になります。
-このワークショップでは、 Snyk Open Source を利用します。
+このワークショップでは、 Snyk Open Source と Snyk Code を利用します。
+
+APPENDIX として、AWS CodePipeline と Snyk Open Source の統合機能のハンズオンもありますので、時間が余ったら試してみてください。
 
 <img src="./static/images/diagrams.png" width="100%">
 
