@@ -10,7 +10,7 @@ Snyk Code で **Sensitive Cookie Without 'HttpOnly' Flag** と検出されたも
 
 1\. Snyk Code が認識したファイルは 2 つあります。まず、 **pages/a2.py** を編集して、以下のコードに置き換えましょう。変更は **35** 行目で、クッキーが設定されたときに **httponly** を有効にします。
 
-```diff {.line-numbers}
+```python {.line-numbers}
 from flask import (
     Blueprint,
     request,
@@ -45,8 +45,7 @@ def a2_auth():
     # Generate SessionID
     session_id = generate_session(username)
     response = make_response(redirect("/owasp/A2/welcome"))
--    response.set_cookie("sessionId", session_id)
-+    response.set_cookie("sessionId", session_id, httponly=True)
+    response.set_cookie("sessionId", session_id, httponly=True)
 
     return response
 
@@ -61,7 +60,7 @@ def a2_welcome():
 
 2\. **pages/a5.py** でも 40 行目を同様に修正します。
 
-```diff {.line-numbers}
+```python {.line-numbers}
 from flask import (
     Blueprint,
     request,
@@ -101,8 +100,7 @@ def a5_auth():
     # Generate SessionID
     session_id = generate_session(username)
     response = make_response(redirect("/owasp/A5/profile/{}".format(username)))
--    response.set_cookie("sessionId", session_id)
-+    response.set_cookie("sessionId", session_id, httponly=True)
+    response.set_cookie("sessionId", session_id, httponly=True)
     
     return response
 
@@ -123,7 +121,7 @@ def a5_profile(username):
 
 3\. **pages/a2.py** を編集して、以下のコードに置き換えましょう。**35** 行目に検出を無視するルールを追記します。
 
-```diff {.line-numbers}
+```python {.line-numbers}
 from flask import (
     Blueprint,
     request,
@@ -158,7 +156,7 @@ def a2_auth():
     # Generate SessionID
     session_id = generate_session(username)
     response = make_response(redirect("/owasp/A2/welcome"))
-+    # deepcode ignore WebCookieMissesCallToSetSecure: This is test environment.
+    # deepcode ignore WebCookieMissesCallToSetSecure: This is test environment.
     response.set_cookie("sessionId", session_id, httponly=True)
 
     return response
@@ -174,7 +172,7 @@ def a2_welcome():
 
 4\. **pages/a5.py** でも同様に 40 行目を追記します。
 
-```diff {.line-numbers}
+```python {.line-numbers}
 from flask import (
     Blueprint,
     request,
@@ -214,7 +212,7 @@ def a5_auth():
     # Generate SessionID
     session_id = generate_session(username)
     response = make_response(redirect("/owasp/A5/profile/{}".format(username)))
-+    # deepcode ignore WebCookieMissesCallToSetSecure: This is test environment.
+    # deepcode ignore WebCookieMissesCallToSetSecure: This is test environment.
     response.set_cookie("sessionId", session_id, httponly=True)
     
     return response
@@ -232,4 +230,4 @@ def a5_profile(username):
 
 修正が終わったら、 SSIT の修正に入ります。
 
-[Next: SSTI 脆弱性の修正](./fix-ssti-vulnerability)
+[Next: SSTI 脆弱性の修正](./fix-ssti-vulnerability.md)
