@@ -15,6 +15,7 @@ CI （ CodeBuild ）に Snyk OSS を組み込むために、 トークンを設�
 ```bash
 cd ~/environment/flask-app
 git commit -a -m "Setting up SCA BuildSpec"
+git push
 ```
 
-[Next: 依存関係のチェック]("./check-the-dependencies.md")
+[Next: 依存関係のチェック](./check-the-dependencies.md)
