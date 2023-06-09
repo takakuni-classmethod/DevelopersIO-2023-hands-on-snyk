@@ -16,4 +16,4 @@ SASTは、ソースコードをレビューし、脆弱性のある箇所を特�
 - CodeBuild を使って Snyk Code のスキャンを自動化する
 - SAST ツールと手動コードレビューで見つかった一般的な脆弱性を修正する
 
-[Next: ソースコードリポジトリの準備](./seed-repository.md)
+[Next: Snyk トークン発行](./generate-snyk-token.md)
