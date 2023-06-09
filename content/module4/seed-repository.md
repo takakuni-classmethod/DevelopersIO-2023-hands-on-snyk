@@ -24,7 +24,7 @@ cd ~/environment/flask-app
 
 4\. CI に Snyk を組み込みます。 **flask-app/sca_buildspec.yaml** の 12 行目を編集し、 Snyk Token を貼り付けます。
 
-> **Warn**
+> **Warning**
 >
 > ワークショップの便宜上、ハードコーディングを行なっていますが、実際の商用環境で Snyk のトークンを利用する際は、ハードコーディングを避け、Systems Manager や Secrets Manager に保管するように設定してください。
 
