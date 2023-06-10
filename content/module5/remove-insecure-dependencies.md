@@ -6,7 +6,7 @@
 
 1\. AWS Cloud9 に移動し、**flask-app** フォルダの下にある **requirements.txt** ファイルを開きます。
 
-<img src="./../../static/images/module5/03-01-remove-insecure-dependencies.png">
+<img src="/static/images/module5/03-01-remove-insecure-dependencies.png">
 
 2\. **flask** を **2.2.3** から **2.2.5**, **werkzeug** を **2.2.2** から **2.2.3**, **setuptools** を **57.4.0** から **65.5.1** にアップグレードしておきます。 **requirements.txt** ファイルを保存します。新しいバージョンの **requirements.txt** は、次のようになります。
 
@@ -40,10 +40,10 @@ git push
 
 4\. プッシュが完了してしばらくすると、 **ApplicationSecurityChecks** が合格していることがわかります。また、 **BuildImage** に進み、 Docker イメージのビルドが進む仕組みとなっています。
 
-<img src="./../../static/images/module5/03-02-remove-insecure-dependencies.png" width=100%>
+<img src="/static/images/module5/03-02-remove-insecure-dependencies.png" width=100%>
 
 5\. **BuildImage** ステージが終了すると、 Amazon ECR に新しいコンテナイメージが公開されているのが確認できるかと思います。このイメージを使って、次のセクションで Amazon ECS で実行されている現在の **flask-app** タスクを置き換えます。
 
-<img src="./../../static/images/module5/03-03-remove-insecure-dependencies.png" width=100%>
+<img src="/static/images/module5/03-03-remove-insecure-dependencies.png" width=100%>
 
 [Next: ECS タスクの更新](../module6/index.md)

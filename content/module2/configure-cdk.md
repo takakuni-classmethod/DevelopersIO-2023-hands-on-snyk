@@ -30,7 +30,7 @@ source .venv/bin/activate
 
 4\. 仮想環境がアクティブになると、現在のターミナルセッションが仮想環境を使用していることが示されます (シェルの左端に `.venv` と示されています)。 
 
-<img src="./../../static/images/module2/02-01-configure-cdk.png" width=100%>
+<img src="/static/images/module2/02-01-configure-cdk.png" width=100%>
 
 5\. 次のコマンドで必要なライブラリをインストールしましょう。
 

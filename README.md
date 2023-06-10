@@ -34,6 +34,6 @@ Snyk Code は SAST 製品の 1 つで、オープンソースコミットを学�
 
 APPENDIX として、AWS CodePipeline と Snyk Open Source の統合機能のハンズオンもありますので、時間が余ったら試してみてください。
 
-<img src="./static/images/diagrams.png" width="100%">
+<img src="/static/images/diagrams.png" width="100%">
 
 [Next：開発環境のセットアップ](./content/module1/aws-cloud9.md)

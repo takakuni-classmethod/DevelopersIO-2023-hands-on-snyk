@@ -12,6 +12,6 @@ git clone https://github.com/takakuni-classmethod/DevelopersIO-2023-hands-on-sny
 
 2\. リリース自動化用の CDK コンストラクトを含む **DevelopersIO-2023-hands-on-snyk-cdk** という名前の新しいフォルダが表示されます。次のセクションに進み、環境にデプロイしましょう。
 
-<img src="./../../static/images/module2/01-01-download-project-files.png" width=100%>
+<img src="/static/images/module2/01-01-download-project-files.png" width=100%>
 
 [Next: AWS CDK の設定](./configure-cdk.md)
