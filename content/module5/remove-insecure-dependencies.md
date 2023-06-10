@@ -42,7 +42,8 @@ git push
 
 <img src="./../../static/images/module5/03-02-remove-insecure-dependencies.png" width=100%>
 
-5\. **BuildImage** ステージが終了すると、 Amazon ECR に新しいコンテナイメージが公開されているのが確認できるかと思います。このイメージを使って、次のセクションで Amazon ECS で実行されている現在の **flask-app** タスクを置き換える予定です。
+5\. **BuildImage** ステージが終了すると、 Amazon ECR に新しいコンテナイメージが公開されているのが確認できるかと思います。このイメージを使って、次のセクションで Amazon ECS で実行されている現在の **flask-app** タスクを置き換えます。
 
 <img src="./../../static/images/module5/03-03-remove-insecure-dependencies.png" width=100%>
 
+[Next: ECS タスクの更新](../module6/index.md)
