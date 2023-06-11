@@ -36,8 +36,6 @@ APPENDIX として、AWS CodePipeline と Snyk Open Source の統合機能のハ
 
 <img src="/static/images/diagrams.png" width="100%">
 
-[Next：開発環境のセットアップ](./content/module1/aws-cloud9.md)
-
 ## 所用時間
 
 このワークショップを全て完了するには 2.5 から 3 時間かかると思います。スキップできるオプションモジュールもありますが、ぜひ時間をかけてすべてのモジュールを試してみることをお勧めします。
@@ -46,3 +44,5 @@ APPENDIX として、AWS CodePipeline と Snyk Open Source の統合機能のハ
 
 - パート1（SAST, SCA のチェック, コンテナイメージのビルドまで）：1.5 時間
 - パート2（パート1 に加えて、セキュアコードレビュー, Snyk マネージドアクション）：2.5 から 3 時間
+
+[Next：開発環境のセットアップ](./content/module1/aws-cloud9.md)
