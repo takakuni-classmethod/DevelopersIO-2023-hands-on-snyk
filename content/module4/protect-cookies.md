@@ -4,7 +4,7 @@ Snyk Code で **Sensitive Cookie Without 'HttpOnly' Flag** と検出されたも
 
 このセキュリティの問題は、保護されていない Cookie による潜在的な XSS 脆弱性です。モジュール3での XSS 演習 では、攻撃者は、ブラウザのクッキーと一緒に別のウェブページにリダイレクトするようにブラウザを強制するクライアントサイドの JavaScript コードを注入することによって、ユーザの sessionId を盗み出すことができました。
 
-<img src="/static/images/module4/04-01-protect-cookies.png" width=100%>
+<img src="/static/images/module4/03-01-protect-cookies.png" width=100%>
 
 これを防ぐ方法の 1 つは、設定したクッキーを **HttpOnly** として指定してマークすることです。これによりウェブサイトが設定したクッキーが他のドメインからアクセスできないようにブラウザに指示します。これは比較的簡単な修正です。AWS Cloud9 を開きます。
 
@@ -117,7 +117,7 @@ def a5_profile(username):
 
 また、 **Sensitive Cookie in HTTPS Session Without 'Secure' Attribute** と検出されています。この設定を行うと、ブラウザは暗号化されていない HTTP リクエストでクッキーを送信できなくなります。しかし、残念ながら現在のラボ環境では独自のドメインを購入/使用できないため、ここでは AWS ACM を使用することはできません。一旦、これらの調査結果を無視するよう設定します。（あくまでこのワークショップの中でのみこのようにします）。
 
-<img src="/static/images/module4/04-02-protect-cookies.png" width=100%>
+<img src="/static/images/module4/03-02-protect-cookies.png" width=100%>
 
 3\. **pages/a2.py** を編集して、以下のコードに置き換えましょう。**35** 行目に検出を無視するルールを追記します。
 
@@ -228,6 +228,6 @@ def a5_profile(username):
     return render_template("profile.html", user=user)
 ```
 
-修正が終わったら、 SSIT の修正に入ります。
+修正が終わったら、 SSTI の修正に入ります。
 
 [Next: SSTI 脆弱性の修正](./fix-ssti-vulnerability.md)

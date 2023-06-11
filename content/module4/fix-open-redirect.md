@@ -2,7 +2,7 @@
 
 最後に **Open Redirect** と検知された部分を修正していきます。
 
-<img src="/static/images/module4/06-01-fix-open-redirect.png" width=100%>
+<img src="/static/images/module4/05-01-fix-open-redirect.png" width=100%>
 
 オープンリダイレクト攻撃は、ウェブアプリケーションがユーザーを不正で信頼できないサイトにリダイレクトさせることで発生します。一般的に、 URL リダイレクトとは、ウェブサイトやアプリケーションがユーザーを別のサイトにリダイレクトする機能のことを指します。これは、多くの場合、良心的で有用な機能です。
 
@@ -71,6 +71,7 @@ def a5_profile(username):
 ```bash
 cd ~/environment/flask-app
 git commit -a -m "Fix SAST Findings"
+git push
 ```
 
 [Next: ソフトウェア構成解析 (SCA)](../module5/index.md)

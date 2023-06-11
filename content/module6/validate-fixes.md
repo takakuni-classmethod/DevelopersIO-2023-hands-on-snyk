@@ -8,6 +8,6 @@
 
 2\. 時間が余ったら、[APPENDIX: マネージド Snyk アクションの組み込み (15分) ](../module7/managed-snyk-action.md) または [セキュアコードレビューの続き (10分) ](https://catalog.workshops.aws/sec4devs/ja-JP/module8) をやってみましょう。
 
-3\. 残り時間があまり取れなさそうであれば、以下の URL に進みます。
+3\. パート2 は以上で終了です！お疲れ様でした！ハンズオンで利用したリソースの片付けに進みます。
 
 [Next: 片付け](../module8/crean-up.md)

@@ -6,6 +6,6 @@ CI （ CodeBuild ）に Snyk を組み込むために、 Snyk 側でトークン
 
 2\. Account Settings から **Auth Token** で KEY ボックスをクリックすると、トークンが表示されます。後ほど、利用するためトークンをメモしておいてください。
 
-<img src="/static/images/module4/02-01-generate-snyk-token.png" width=100%>
+<img src="/static/images/module4/01-01-generate-snyk-token.png" width=100%>
 
 [Next: ソースコードリポジトリの準備](./seed-repository.md)

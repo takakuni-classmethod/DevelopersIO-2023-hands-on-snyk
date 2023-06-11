@@ -6,11 +6,11 @@
 
 <img src="/static/images/module8/01-01-crean-up.png" width=100%>
 
-2\. AWS Cloud9に戻り、以下のコマンドを入力して、このワークショップでプロビジョニングしたものをすべて破棄します。
+2\. AWS Cloud9 に戻り、以下のコマンドを入力して、このワークショップでプロビジョニングしたものをすべて破棄します。
 
 ```bash
 cd ~/environment/DevelopersIO-2023-hands-on-snyk-cdk/pipeline
-cdk destroy
+cdk destroy --force
 ```
 
 > **Note**
@@ -21,11 +21,11 @@ cdk destroy
 
 <img src="/static/images/module8/01-02-crean-up.png" width=100%>
 
-4\. Cloud9 側の CloudFormation スタックも削除しておきましょう。 CloudFormation コンソールに移動し、 Cloud9 作成時に自動で作成された CloudFormation スタックを選択します。 **[削除]** をクリックして、スタックの削除を行います。
+4\. ECS Task のロググループを削除します。 CloudWatch コンソールからロググループを選択し、フィルターに **AppSecWorkshopStack** を入力します。ロググループを選択後、**[ロググループの削除]** をクリックし、ログを削除します。
 
 <img src="/static/images/module8/01-03-crean-up.png" width=100%>
 
-5\. CodeBuild のロググループを削除します。 CloudWatch コンソールからロググループを選択し、今回作成した CodeBuild プロジェクトのロググループを選択します。 **[ロググループの削除]** をクリックし、ログを削除します。
+5\. CodeBuild のロググループを削除します。 CloudWatch コンソールからロググループを選択し、フィルターに **/aws/codebuild** を入力します。対象のロググループを選択後、**[ロググループの削除]** をクリックし、ログを削除します。
 
 <img src="/static/images/module8/01-04-crean-up.png" width=100%>
 
@@ -64,6 +64,9 @@ cdk destroy
 
 <img src="/static/images/module8/01-12-crean-up.png" width=100%>
 
-14\. テキスト入力フィールドにバケットの名前を入力し、**[バケットの削除]**をクリックします。
+14\. テキスト入力フィールドにバケットの名前を入力し、**[バケットの削除]** をクリックします。
 
 <img src="/static/images/module8/01-13-crean-up.png" width=100%>
+
+お疲れ様でした！片付けが完了しました。
+ワークショップ終了です！
