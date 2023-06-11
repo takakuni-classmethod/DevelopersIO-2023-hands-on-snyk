@@ -1,63 +1,11 @@
-# ECS タスクの更新
+# 安全なコードレビュー
 
-Web アプリケーションの修正が完了したため、ビルドされたコンテナイメージを ECS に適用します。
+SAST, DAST, SCA, ライセンスチェックなどの自動化されたセキュリティツールは、コードベース内のセキュリティ問題を特定するのに必要な労力を大幅に削減します。しかし、ツールは最初のゲートまでしかたどり着けません。セキュリティ問題の中には、ビジネスロジックに組み込まれていたり、自動セキュリティツールでは検出できないような方法で抽象化されていたりするものがあるからです。
 
-1\. **DevelopersIO-2023-hands-on-snyk-cdk/pipeline/config.yaml** を次のように変更します。
+小規模な企業では、 OWASP Top 10 や Mitre Top 25 などのセキュアコーディングガイドラインに従ったコードレビューを実施できます。
 
-```yaml
-### Staging Auto-Deploy
-auto_deploy_staging: True
-initial_image: public.ecr.aws/adelagon/flask-app:latest
+より多くの従業員を抱えることができる中堅・大企業の場合、セキュアコードレビューは、ソフトウェア開発の経歴を持つコアセキュリティチームが行うことができます。しかし、時間の経過につれて、セキュアコーディングの知識をすべての開発者に伝えることが、時間短縮ためには不可欠になってきます。
 
-### Static Application Security Testing (SAST) Step
-sast:
-  enabled: True
+このモジュールでは、セキュリティテストツールで検出されなかった残りの脆弱性を確認し、修正し、最後に修正内容を検証します。
 
-### Software Composition Analysis (SCA) Step
-sca:
-  enabled: True
-
-### License Checker Step
-license:
-  enabled: False
-
-### Dynamic Application Security Testing (DAST) Step
-dast:
-  enabled: False
-  zaproxy:
-    instance_type: t3.medium
-    api_key: SomeRandomString
-```
-
-2\. 修正が完了したら次のコマンドでパイプラインの更新を行います。
-
-```bash
-cd ~/environment/DevelopersIO-2023-hands-on-snyk-cdk/pipeline
-cdk deploy --require-approval never
-```
-
-> **Note**
-> 
-> AWS アカウントからログアウトし、AWS Cloud9 をリロードした場合には、仮想環境を再度有効化する必要があるため、`cdk deploy` 前に、 `source .venv/bin/activate` を実行してください。
-
-3\. デプロイが完了すると、次のような出力が得られるはずです。
-
-<img src="/static/images/module6/01-01-index.png" width=100%>
-
-4\. CodePipeline コンソールでも、 **DeployToStaging** ステージが追加されていることがわかります。
-
-<img src="/static/images/module6/01-02-index.png" width=100%>
-
-5\. パイプラインの更新を行ったため、 CodePipeline コンソールから **[変更をリリース]** をクリックして、 ECS タスクの置き換えを行います。
-
-<img src="/static/images/module6/01-03-index.png" width=100%>
-
-6\. 確認画面が出てくるので [リリースする] をクリックします。
-
-<img src="/static/images/module6/01-04-index.png" width=100%>
-
-7\. パイプラインの実行が完了すると、 ECS タスクの置き換えが完了します。
-
-<img src="/static/images/module6/01-05-index.png" width=100%>
-
-[Next: 修正プログラムの検証](./validate-fixes.md)
+[Next: セキュアなトークンの生成](generate-secure-tokens.md)

@@ -26,7 +26,7 @@ Werkzeug==2.2.3
 WTForms==3.0.1
 zipp==3.15.0
 wdb==3.3.0
-setuptools>=65.5.1
+setuptools==65.5.1
 ```
 
 3\. Cloud9 のターミナルウィンドウに移動し、以下のコマンドを入力して変更をコミット、プッシュします。
@@ -46,4 +46,4 @@ git push
 
 <img src="/static/images/module5/03-03-remove-insecure-dependencies.png" width=100%>
 
-[Next: ECS タスクの更新](../module6/index.md)
+[Next: 安全なコードレビュー](../module6/index.md)
