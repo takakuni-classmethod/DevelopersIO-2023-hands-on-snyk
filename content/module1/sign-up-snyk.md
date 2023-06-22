@@ -18,4 +18,4 @@ Snyk の画面にログインできたら、セットアップ完了です。
 
 <img src="/static/images/module1/01-04-sign-up-snyk.png" width=100%>
 
-[Next: Project File のダウンロード](../module2/download-project-files.md)
+[Next: Snyk Code の有効化](../module1/enable-snyk-code.md)
